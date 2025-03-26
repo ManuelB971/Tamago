@@ -18,7 +18,7 @@ const pets: Pet[] = [
 ];
 
 const VirtualPet: React.FC = () => {
-  const [pet, setPet] = useState<Pet | null>(null); // Fix: specify type
+  const [pet, setPet] = useState<Pet | null>(null); 
   const [hunger, setHunger] = useState(100);
   const [happiness, setHappiness] = useState(100);
 
@@ -43,7 +43,7 @@ const VirtualPet: React.FC = () => {
               <button
                 key={p.name}
                 className="text-4xl hover:scale-110 transition"
-                onClick={() => setPet(p)} // Fix: now correctly typed
+                onClick={() => setPet(p)} 
               >
                 {p.emoji}
               </button>
